@@ -4,61 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navbar</title>
+    <title>Document</title>
     <style>
         #container{
-            width: 95%;
-            height: 80px;
-            background-color: black;
-            display: grid;
+            display: flex;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-color: rgb(21, 13, 127);
+            border-radius: 20px;
+            height: 60px;
+        }
+        #container > div{
+            /* border:1px solid orange; */
+            height: 100%;
+            width: 50%;
             margin: auto;
-            grid-template-columns: repeat(5,1fr);
-            grid-template-rows: repeat(50px);
-            margin-top: 3%;
-            text-align: center;
-            border-radius: 10px 10px 10px 10px;
-            font-size: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1,60px);
+            gap: 20px;
         }
-        #container>div{
-            color: blue;
-            
-        }
-        #container>div:first-child{
+        #container > div:first-child {
             color: white;
-            padding-top: 8%;
-            padding-right: 70%;
+            display: flex;
+            align-items: center;
+            padding-left: 2%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        #container>div:nth-child(2){
+        #container > div:last-child > div{ 
+            /* border: 1px solid blue; */
             color: white;
-            padding-left: 260%;
-            margin-top: 8%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        #container>div:nth-child(3){
-            color: white;
-            padding-left: 195%;
-            margin-top: 8%;
-        }
-        #container>div:nth-child(4){
-            color: white;
-            padding-left: 135%;
-            margin-top: 8%;
-        }
-        #container>div:nth-child(5){
-            color: white;
-            padding-left: 50%;
-            margin-top: 8%;
-        }
-     
-       
     </style>
 </head>
 <body>
-   <div id="container">
-       <div id=" brand">Reebok</div>
-       <div id="select">Men</div>
-       <div>Women</div>
-       <div>Login</div>
-       <div>Signup</div>
-   </div> 
+    <div id = "container">
+        <div>Reebok</div>
+        <div>
+            <div><a href="mens.html">Men</a></div>
+            <div>Women</div>
+            <div><a href="login.html">Login</a></div>
+            <div><a href="SignUp.html">Signup</a></div>
+        </div>
+    </div>
 </body>
 </html>
