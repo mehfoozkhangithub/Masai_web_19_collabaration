@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mens wear</title>
+    <style>
+        #container{
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 40px;
+       
+        }
+        #container>div{
+            display: grid;
+         /* justify-content: center;  */
+            /* align-items: center;  */
+            /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+        }
+       
+        #container>div>img{
+          width: 30vw;
+          height: 60vh;
+          border-top-left-radius:8px;
+          border-top-right-radius:8px;
+          margin-left:15%; ;
+          
+        }
+        #container>div>p{
+            padding: 0px;
+            padding-bottom: 10px;
+            margin: 0px;
+            letter-spacing: 0.5px;
+            
+            
+        }
+        #container>div>h2{
+            padding:2px 0px;
+            margin: 2px 0px;
+        }
+        @media all and (min-width:769px) and (max-width:1023px) {
+            #container{
+            width: 97%;    
+            background-color: orange;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-rows:auto;
+            /* flex-wrap: nowrap; */
+            gap: 20px;
+            }
+        }
+        
+        @media all and (min-width:479px) and (max-width:768px) {
+            #container{
+            width: 97%;    
+            background-color: orange;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-rows: auto;
+            /* flex-wrap: nowrap; */
+            gap: 20px;
+            }
+        }
+            @media all and (min-width:320px) and (max-width:478px) {
+            #container{
+            width: 97%;    
+            background-color: orange;
+            grid-template-columns:1fr;
+            grid-template-rows: auto; 
+            /* flex-wrap: nowrap; */
+            gap: 20px;
+            }
+        }
+       
+        #container>div>h2{font-size: 32px;}
+        #container>div>h2+p{
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: gray;
+        }
+        #container>div>p:last-child{font-size: 34px;}
+        #container>div>p>span:first-child{
+           text-decoration: line-through;
+           font-size: 34px;
+           color: grey;
+        }
+        #container>div>p>span:last-child{
+            color: green;
+            font-size: 34px;
+            padding: 0px 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+      <div>
+          <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2339311/2018/4/11/11523440670120-WROGN-Men-Brown--Black-Striped-Round-Neck-T-shirt-7831523440669855-1.jpg" alt="imag">
+    
+          <h2>Pause</h2>
+          <p>Men Cotton Long Sleeves Shrug</p>
+          <p>&#8377;359 <span>&#8377; 1499</span><span>-76%</span></p>
+      </div>
+      <div>
+        <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1700944/2022/3/2/093bc645-d461-4128-94a1-0692803944141646215571321-HRX-by-Hrithik-Roshan-Men-Yellow-Printed-Cotton-Pure-Cotton--1.jpg" alt="imag">
+        <h2>Pause</h2>
+        <p>Men Cotton Long Sleeves Shrug</p>
+        <p>&#8377;359 <span>&#8377; 1499</span><span>-76%</span></p>
+    </div>
+    </div>
+</body>
+</html>
